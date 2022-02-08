@@ -13,3 +13,19 @@ Automation Steps
   - Recreate Vocab
   - Upload audio file to S3
   - Run job remotely
+
+export PATH=/usr/local/bin:$PATH
+source ~/.bash_profile
+
+aws s3 cp HIHO-vocab.csv s3://hiho-transcription/HIHO-vocab.csv --dryrun
+
+aws transcribe update-vocabulary \
+  --vocabulary-file-uri s3://hiho-transcription/HIHO-vocab.csv \
+  --vocabulary-name Gymnastics \
+  --language-code en-US
+
+aws transcribe get-vocabulary \
+  --vocabulary-name Gymnastics
+
+aws transcribe get-transcription-job \
+  --transcription-job-name Gymnastics
