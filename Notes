@@ -1,0 +1,15 @@
+Podcasts Stored at:
+/Users/mianeil/Library/Group Containers/243LU875E5.groups.com.apple.podcasts/Library/Cache
+
+To run formatter:
+  python ./transcript.py ../{input}.json
+
+./transcribe_formatter.sh
+
+
+Automation Steps
+  - Add to vocab with correct format
+  - Upload new version of vocab.csv to S3
+  - Recreate Vocab
+  - Upload audio file to S3
+  - Run job remotely
