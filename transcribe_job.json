@@ -1,12 +1,14 @@
 {
-  "TranscriptionJobName": "Andres_Steele",
+  "TranscriptionJobName": "Kaiya_Lindhardt",
   "LanguageCode": "en-US",
   "Media": {
-    "MediaFileUri": "s3://hiho-transcription/Audio_Input/Andres_Steele.mp3"
+    "MediaFileUri": "s3://hiho-transcription/Audio_Input/Kaiya_Lindhardt.mp3"
   },
   "Settings":{
     "VocabularyName": "Gymnastics",
     "ShowSpeakerLabels": true,
     "MaxSpeakerLabels": 6
-  }
+  },
+  "OutputBucketName":"hiho-transcription",
+  "OutputKey":"/output/Kaiya_Lindhardt.json
 }

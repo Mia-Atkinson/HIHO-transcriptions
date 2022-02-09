@@ -37,6 +37,7 @@ Get Vocabulary Status
 aws transcribe get-vocabulary \
   --vocabulary-name Gymnastics
 ```
+
 Start Transcription job
 ```bash
 aws transcribe start-transcription-job \
@@ -47,6 +48,13 @@ Get Transcription Job Status
 ```bash
 aws transcribe get-transcription-job \
   --transcription-job-name Gymnastics
+```
+
+Get Transcription Output from S3
+```bash
+aws s3 cp \
+  s3://hiho-transcription/output/Kaiya_Lindhardt.json \
+  json/Kaiya_Lindhardt.json
 ```
 
 ## Usage
