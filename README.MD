@@ -53,7 +53,7 @@ aws transcribe get-transcription-job \
 Get Transcription Output from S3
 ```bash
 aws s3 cp \
-  s3://hiho-transcription/output/Kaiya_Lindhardt.json \
+  s3://hiho-transcription/output/Kaiya_Lindhardt.mp3 \
   json/Kaiya_Lindhardt.json
 ```
 
