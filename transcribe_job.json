@@ -1,0 +1,12 @@
+{
+  "TranscriptionJobName": "Andres_Steele",
+  "LanguageCode": "en-US",
+  "Media": {
+    "MediaFileUri": "s3://hiho-transcription/Audio_Input/Andres_Steele.mp3"
+  },
+  "Settings":{
+    "VocabularyName": "Gymnastics",
+    "ShowSpeakerLabels": true,
+    "MaxSpeakerLabels": 6
+  }
+}
