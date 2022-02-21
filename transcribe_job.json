@@ -1,8 +1,8 @@
 {
-  "TranscriptionJobName": "Kaiya_Lindhardt",
+  "TranscriptionJobName": "Feb_21",
   "LanguageCode": "en-US",
   "Media": {
-    "MediaFileUri": "s3://hiho-transcription/Audio_Input/Kaiya_Lindhardt.mp3"
+    "MediaFileUri": "s3://hiho-transcription/Audio_Input/Feb_21.mp3"
   },
   "Settings":{
     "VocabularyName": "Gymnastics",
@@ -10,5 +10,5 @@
     "MaxSpeakerLabels": 6
   },
   "OutputBucketName":"hiho-transcription",
-  "OutputKey":"/output/Kaiya_Lindhardt.json
+  "OutputKey":"output/Feb_21.json"
 }

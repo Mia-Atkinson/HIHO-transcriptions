@@ -1,5 +1,5 @@
 # HIHO Podcast Transcriber
-
+ctrl+shift+m to preview
 This project takes json output from AWS Transcription and converts it into a human readable script.
 
 ## Setup
@@ -69,9 +69,14 @@ Text files should be reviewed for accuracy before use
 
 ### Automation Steps
   - Add to vocab with correct format
-  - Run job remotely
-  - Send Job output to S3
-  - Download job output file
+  - Check Job status then print when completed
+  - Combine scripts, so when job finishes the file is downloaded and formatted
+  - Make name in settings JSON into a variable
+
+### Formatter
+  - Currently the last word is often carried to the next speaker, try adjusting the timing
+  - Remove '[null]' from the top
+  - Add title
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
