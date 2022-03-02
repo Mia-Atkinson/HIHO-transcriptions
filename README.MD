@@ -66,6 +66,15 @@ This will create an output text file script in /output_text
 Text files should be reviewed for accuracy before use
 
 ## TODO
+  - Update vocabulary
+  - For each Audio file in /Audio,
+    - Upload to S3,
+    - Lambda to start transcription job
+    - Lambda runs on new files in S3: run formatter
+    - Formatter tweaked with small formatting improvements:
+      - remove repeated words
+      - right? to Right.
+    - Lambda runs on new files: Upload to Google Drive
 
 ### Automation Steps
   - Add to vocab with correct format

@@ -17,3 +17,6 @@ then
   cd ~/Desktop/HIHO
   aws s3 cp Audio/$JOB_NAME.mp3 s3://hiho-transcription/Audio_Input/$JOB_NAME.mp3
 fi
+
+#Upload to S3
+aws s3 cp Audio/$JOB_NAME.mp3 s3://hiho-transcription/Audio_Input/$JOB_NAME.mp3
